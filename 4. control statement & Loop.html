@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>loop</title>
+</head>
+<body>
+   
+ <!-- if..else -->
+
+ <script>
+   var tomr = 'rain';
+          if (tomr != 'rain'){
+              console.log('take a raincoat');
+          }else{
+              console.log('No need to take a raincoat ')
+          }
+      </script>
+         <!--  challenge  -->
+         <!-- what is truthy and falsy value in javascript -->
+         <!-- we have total 5 falsy vaues in javascript -->
+         <!-- 0, "", undefined, null, NaN, is false anyway -->
+         <!-- falsy -->
+      <script>
+   if (sco = 3){
+      console.log ("Yay, We won the game ");
+   }else{
+      console.log("OMG, we loss the game");
+   }
+  
+       </script> 
+       <!-- truthy -->
+       <script>
+          if (score = 7){
+             console.log ("Yay, We won the game ");
+          }else{
+             console.log("OMG, we loss the game");
+          }
+         
+              </script>
+  
+  
+  <h1>switch statement</h1>
+  <script>
+   var day = 7;
+  switch (day) {
+    case 0:
+           document.write ("Today is Monday")
+  break;
+  
+  case 1:
+           document.write ("Today is Tuesday")
+  break;
+  case 2:
+           document.write ("Today is Wednesday")
+  break;
+  case 3:
+           document.write ("Today is Thursday")
+  break;
+  case 4:
+           document.write ("Today is Friday")
+  break;
+  case 5:
+           document.write ("Today is Saturday")
+  break;
+  case 6:
+           document.write ("Today is Sunday")
+  break;
+  
+    default:
+           document.write ("Enter the valid Week Day")
+        }
+  
+  </script>
+  <br>
+  <!--  -->
+  <!-- <script>
+     var age = 21;
+     switch (true) {
+        case (age >= 25 &&  age <= 35):
+        document.write (" You are Eligible1 ")
+  
+        break;
+        case (age >= 20 &&  age <= 30):
+        document.write (" You are Eligible2 ");
+  
+        default:
+           document.write ("Enter the valid Age")
+        }
+  
+  </script> -->
+  <h1>while Loop</h1>
+  <script>
+      var num = 0;
+      while (num <= 10 ){
+        document.write (num +'<br>');
+      num++;
+      }
+  </script>
+  
+  
+  <h1>Do-while Loop</h1>
+  <script>
+      var num = 0;
+      do{
+        document.write (num +'<br>');
+      num++;
+   }  while (num <= 10 );      
+  </script>
+  
+  
+  
+  <h1>For Loop</h1>
+  <script>
+     for (var a = 3; a <= 10; a++){
+        document.write(a + '<br>')
+     }
+  </script>
+<!-- For In Loop-->
+  <h1>For In Loop</h1>
+<script>
+   var myfriends =['gomti','kajal','muskan','payal'];
+   for(let elements in myfriends){
+      document.write(elements +'<br>')
+   }
+</script>
+
+
+<!-- For of Loop-->
+<h1>For of Loop</h1>
+<script>
+   var myfriends =['gomti','kajal','muskan','payal'];
+   for(let elements of myfriends){
+      document.write(elements +'<br>');
+   }
+</script>
+         <!--  challenge  -->
+   <!-- javascript program to print table for given number (8) using for Loop? -->
+  <h1>challenge</h1>
+  <script>
+     for (var num = 1; num <= 10; num++){
+      var tableOf = 8;
+      document.write(tableOf + " * " + num + " = " + tableOf * num +'<br>')
+     }
+  </script>
+   </body>
+  </html>
+  
+   

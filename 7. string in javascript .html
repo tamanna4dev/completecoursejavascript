@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> string in javascript</title>
+</head>
+<body>
+    <h1>Escape character </h1>
+    <h3>Double quote</h3>
+    <script>
+        let sentence ='We are the sp-called  "vikings" from the north.';
+        document.write(sentence +'<br>')
+    </script>
+<br>
+<h3>Double quote</h3>
+<script>
+    let anysentence ='We are the sp-called \'vikings\' from the north.';
+    document.write(anysentence)
+</script>
+
+
+
+<!-- Finding a string in a string -->
+<h1>Finding a string in a string</h1>
+<script>
+    const myBiodata = 'I am the tamanna';
+    document.write(myBiodata.indexOf("the") +'<br>')
+</script>
+
+
+
+<script>
+    const Biodata = 'I am the tamanna';
+    document.write(Biodata.lastIndexOf("tamanna"))
+</script>
+
+    <!-- Extracting string Parts  -->
+<h1>Extracting string Parts</h1>
+<h3>slice method</h3>
+<script>
+   var str = "Apple, Banana, Kivi";
+    let res = str.slice(7, -6);
+    document.write(res);
+</script>
+
+
+<h3>Substring method</h3>
+
+<script>
+    var str = "Apple, Banana, Kivi";
+    let resp = str.substring(7)
+    document.write(resp);
+ </script>
+
+
+<h3>Substr method</h3>
+<script>
+    var str = "Apple, Banana, Kivi";
+    let response = str.substr(-4)
+    document.write(response);
+ </script>
+
+
+    <!-- Replacing string characters -->
+    <h1>Replacing string characters</h1>
+
+    <script>
+
+ let data = `Hello tamanna kumar tamanna`
+ let  = repalceData = data.replace('tamanna', 'Tamanna')
+ document.write(repalceData)
+    </script>
+
+<!-- Extracting string characters -->
+<h1>Extracting string characters</h1>
+
+<!-- charCodeAt -->
+<script>
+    let string = "HELLO WORLD"
+    document.write(string.charCodeAt(3) +'<br>')
+</script>
+
+<!-- charAt -->
+<script>
+    let strings = "HELLO WORLD"
+    document.write(strings.charAt(0) +'<br>')
+</script>
+
+<!-- property Access -->
+<script>
+    var str = "HELLO WORLD"
+    document.write(str[1]+'<br>')
+</script>
+
+
+    <!-- Other useful methods -->
+    <h1>Other useful methods</h1>
+ <script>
+    let myname = "tamanna";
+    document.write(myname.toUpperCase() +'<br>')
+    document.write(myname.toLowerCase())
+
+ </script>
+<h2>concat</h2>
+<script>
+    let fname = "Tamanna"
+    let lname = "rani"
+    document.write(fname + lname+'<br>' );
+    document.write(`${fname} ${lname}`+'<br>');
+    document.write(fname.concat(lname)+'<br>');
+    document.write(fname.concat(" ",lname));
+
+</script>
+
+<h2>trim</h2>
+<script>
+    var str = "     hello       "
+    document.write(str.trim())
+</script>
+    <h2>1.Challenge</h2>
+    <!-- Dispay only 280 characters of a string link the one used in Twitter -->
+    
+    <script>
+        let myTweets = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos enim eius consequuntur sunt, alias nemo fugiat corrupti aut quibusdam officia incidunt adipisci error cupiditate inventore, nihil nobis iste deleniti. Maxime ipsam magni aut error quos quia, officia debitis unde autem quas eveniet repudiandae laudantium eos eius animi ipsa quidem sapiente quo inventore reiciendis vitae, officiis, labore fuga hic! Quam illum corrupti, fugit consequatur at officia, sed incidunt laborum fugiat repellat suscipit laudantium error impedit explicabo. Sequi minima libero doloribus nemo excepturi? Nemo nesciunt nobis accusamus ea repellendus rerum blanditiis beatae quisquam magnam velit, eaque in voluptatem ducimus omnis ipsum iusto, amet non quos? Rerum possimus accusantium incidunt, quasi beatae itaque ducimus aspernatur, dolor non iure odio totam! Velit eligendi praesentium necessitatibus debitis quo quod, veritatis ullam quam fugiat assumenda ex nulla placeat dignissimos nesciunt dolorum voluptatibus perferendis perspiciatis, maiores veniam repellat obcaecati voluptates ad optio dolore! Neque, officiis quia facilis quaerat placeat totam a illum veniam at consequatur sit rerum ipsa ducimus labore cupiditate vel iusto atque culpa veritatis voluptates repellendus eaque odio soluta quasi. Corporis, rem excepturi cum quis harum non facere qui incidunt soluta minima? Quia maxime est soluta veritatis corrupti, tempore corporis provident numquam! Ipsa, minus sapiente nobis dolore accusantium, doloremque maxime illo, possimus unde vel amet natus hic expedita et totam aspernatur fugit nemo? Quam quasi molestiae blanditiis reprehenderit voluptas, fugit cumque atque nemo. Impedit odio natus ea non voluptate neque beatae ipsum voluptas modi quia. Cumque consequatur sequi nesciunt numquam? Non rerum assumenda nobis aspernatur reiciendis illo voluptatem rem. Quisquam explicabo quia ipsa quae obcaecati placeat accusantium tempora id asperiores commodi deserunt nam ducimus voluptas saepe exercitationem, cupiditate at in libero ipsum sapiente magnam." 
+      let myActualTweets = myTweets.slice(0,280)
+     document.write(myActualTweets +'<br>')
+     document.write(myActualTweets.length)
+    
+    </script>
+   <h2>2.Challenge</h2>
+    <!-- challenge -->
+<!-- Return thr unicode of the last character in a string -->
+    
+<script>
+    let last = "HELLO WORLD";
+    let lastChar = last.length -1;
+    document.write(last.charCodeAt(lastChar));
+</script>
+
+<!-- converting a string to an array -->
+
+<h1>converting a string to an array</h1>
+ <script>
+   var txt = "a, b, c, d, e"   //string
+   console.log(txt.split(","));      //split on comman
+   console.log( txt.split(" "));     //split on spaces
+   console.log( txt.split(" | "));   //split on pipe
+ 
+ </script>
+</body>
+</html>

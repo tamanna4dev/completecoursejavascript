@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Functions in javascript</title>
+</head>
+<body>
+
+    <!-- function Definatrion -->
+    <!-- function declaration, function statement -->
+
+
+    <!-- Calling function -->
+    <h2>Calling function</h2>
+    <script>
+        function sum() {
+            var a = 20, b = 30;
+            var total = a + b
+            document.write(total);
+        }
+        sum()
+    </script>
+
+
+
+    <!--  function parameter vs function argument-->
+    <h2>function parameter vs function argument</h2>
+    <script>
+        function sum(a, b) { //parameter
+            var total = a + b
+            document.write(total + '<br>');
+        }
+        sum()
+        sum(13, 12) // argument
+        sum(20, 23)
+    </script>
+
+
+
+    <!-- function expression  -->
+    <h2>function expression</h2>
+    <script>
+        function sum(x, y) {
+            var total = x + y;
+            document.write(total);
+        }
+         sum(5, 15)
+    </script>
+
+
+
+    <h2>Return Keyword</h2>
+    <!-- Return Keyword -->
+    <script>
+        function sum(m, n) {
+            return total = m + n;
+        }
+        var funExp = sum(5, 10);
+        document.write('the sum of two no is ' + funExp);
+
+    </script>
+
+
+
+    <!-- Anonymous Function -->
+    <h2> Anonymous Function </h2>
+    <script>
+        var funExp = function(a,b){
+        return total = a+b;
+
+        }
+        var sum = funExp (12,12);
+        var sum1 = funExp ( 10,11);
+        document.write (sum +'<br>'+ sum1 +'<br>')
+        document.write(sum > sum1)
+    </script>
+
+
+</body>
+
+</html>

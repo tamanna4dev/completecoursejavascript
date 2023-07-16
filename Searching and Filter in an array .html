@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching and Filter in an array</title>
+</head>
+<body>
+    <style>
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+}
+
+		
+
+body {
+	font: 150%/1.6 Helvetica Neue, sans-serif;
+}
+
+
+	th{
+        background-color: #f1f1f1;
+        
+
+    }
+
+	td, th {
+		padding: -1rem;
+        border: 1px solid rgba(0, 0, 0, 0.122);
+        font-size: 18px;
+
+	}
+
+	td  {
+
+		color: rgb(68, 68, 68);
+	}
+#myInput {
+width: 95%;
+height: 1px;
+padding: 17px 30px;
+margin-bottom: 10px;
+}
+#myTable tr.header, #myTable tr:hover{
+    background-color: #f1f1f1;
+} 
+    </style>
+    <h2 style="text-align: center; text-transform: uppercase; color: green;">Search Bar & Filter</h2>
+
+   <input type="text" name="" id="myInput" placeholder="names..." onkeyup="searchFun()">
+
+    <table id="myTable">
+        <tr class="header">
+            <th>Name</th>
+            <th>Degree</th>
+            <th>Profession</th>
+
+
+        </tr>
+        <tr>
+            <td> Tamanna </td>
+            <td> MCS </td>
+            <td> Developer</td>
+
+        </tr>
+        <tr>
+            <td> Gomti </td>
+            <td> BBA </td>
+            <td>Developer</td>
+
+        </tr> 
+        <tr>
+            <td> Muskan </td>
+            <td> BCS </td>
+            <td> Developer </td>
+
+        </tr>
+        <tr>
+            <td>Kajal </td>
+            <td> MCS </td>
+            <td>  Developer </td>
+
+        </tr>
+        <tr>
+            <td> Menu </td>
+            <td> MCS </td>
+            <td>  Developer </td>
+
+
+        </tr>
+        <tr>
+            <td> palak </td>
+            <td> MCA </td>
+            <td>  Developer </td>
+
+        </tr>
+        <tr>
+            <td> Payal </td>
+            <td> BCA </td>
+            <td>  Developer </td>
+
+
+        </tr>
+        <tr>
+            <td>Anjali </td>
+            <td> BCA </td>
+            <td> Developer </td>
+
+
+        </tr>
+    </table>
+    <script>
+        const searchFun = () =>{
+      let filter = document.getElementById('myInput').value.toUpperCase();
+
+      let myTable = document.getElementById('myTable');
+
+      let tr = myTable.getElementsByTagName('tr');
+      
+
+      for(var i = 0; i < tr.length; i++){
+          let td = tr[i].getElementsByTagName('td')[0];
+          console.log(td)
+           
+          if(td){
+            let textvlaue = td.textContent || td.innerHTML;
+
+            if(textvlaue.toUpperCase().indexOf(filter) > -1){
+                tr[i].style.display ="";
+              }else{
+                tr[i].style.display = "none";
+              }
+          }
+      }
+        }
+        
+
+
+
+
+    </script>
+</body>
+</html> 

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interview</title>
+</head>
+<body>
+    <!--  interview Question -->
+    <!-- Question:-1 Difference between null vs undefined -->
+    <!-- null -->
+     <script>
+        var myName = "null";
+        console.log (myName);
+        console.log (typeof(myName))
+     </script>
+
+<!-- undefined -->
+<Script>
+    var a
+    console.log(a) 
+    console.log(typeof(a)) 
+
+</Script>
+
+<!-- Question:-2 what is NaN -->
+<!-- NaN is property ok the global object. -->
+<!-- The initial value of NaN is Not-A-Number -->
+<script>
+    console.log("java" - "script");
+    
+    var myage = "";
+    var myname = "hello";
+
+    console.log (isNaN(myage));
+    console.log (isNaN(myname));
+
+</script>
+
+<!-- Question:-3 what is the Difference between == vs === ? -->
+<script>
+    var num1 = 5
+    var num2 = 5;
+    console.log (typeof(num1));
+    console.log(num1 == num2 );
+</script>
+
+<script>
+    var num1 = 5
+    var num2 = 5;
+    console.log (typeof(num1)); //data type
+    console.log (typeof(num2));
+    console.log(num1 === num2);
+</script>
+
+<!-- Question:-4 function parameter vs  function argument-->
+<!-- function parameter are the names listed in the function's definition -->
+<!-- function arguments are the real values passed to the fuction -->
+
+<script>
+    function sum(a,b){ //parameter
+        var total = a+b
+    document.write(total+'<br>');
+    }
+    sum()
+    sum(13,12) // argument
+    sum(20,23)
+ </script>
+
+ <!-- Question:-4 Why Function --> 
+<!-- you can reuse code: Define the code once, and use it many time. -->
+<!-- you can use the same code many with different argument,to produce different results. -->
+
+<!-- OR -->
+
+<!-- A Function is a group of reusable code which can be callwd anywhere in your program.
+     This eliminates the need of writing the same code again and again -->
+</html>
+</body>

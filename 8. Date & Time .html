@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date & Time</title>
+</head>
+<body>
+    <h2>new Date()</h2>
+<script>
+        let currDate = new Date();
+        document.write(currDate +'<br>')
+        document.write(new Date().toLocaleString()+'<br>')
+        document.write(new Date().toString())
+
+</script>
+
+<h2>Date.now()</h2>
+<script>
+    document.write(Date.now() + '<br>') //miliseconds  jan 1, 1970
+</script>
+
+<!-- year, month , date, hour, minute, second  -->
+<script>
+    var a = new Date(2023, 6, 15, 4, 3, 30)
+   document.write(a.toLocaleString());
+</script>
+
+<h2>Data string</h2>
+<script>
+    var b = new Date("july, 15, 2023 4:34:00")
+   document.write(b.toLocaleString());
+</script>
+
+<h2>miliseconds</h2>
+<script>
+var c = new Date("1689420517516")
+   document.write(c.toLocaleString()+ '<br>');
+   
+</script>
+
+<script>
+var d = new Date("86400000*2")
+   document.write(d.toLocaleString());
+   
+</script>
+
+    <!-- Date Methods (get and set) -->
+<h2>Date Methods (get and set)</h2>
+   
+    <script>
+        document.write(currDate.toLocaleString)
+    </script>
+    <!-- Time  Methods (get and set) -->
+
+</body>
+</html>
